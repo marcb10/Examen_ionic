@@ -1,0 +1,20 @@
+<ion-view view-title="Student">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <form name="myForm">
+            <div class="form-group">
+                <input type="text" class="form-control input-lg text-center" placeholder="Nombre estudiante" ng-model="newStudent.name" required>
+                <br>
+                <input type="text" class="form-control input-lg text-center" placeholder="Address" ng-model="newStudent.address">
+                <br>
+                <input type="text" class="form-control input-lg text-center" placeholder="Nombre telefono" ng-model="newStudent.place">
+                <br>
+                <input type="text" class="form-control input-lg text-center" placeholder="Telefono" ng-model="newStudent.tlf">
+                <br>
+                <input type="text" class="form-control input-lg text-center" placeholder="Asignatura" ng-model="newStudent.subject">
+                <br>
+            </div>
+            <!-- Acciones que podemos realizar en el formulario -->
+            <button type="submit" class="button button-positive"  ng-click="addStud()">Añadir estudiante</button>
+        </form>
+    </ion-content>
+</ion-view>

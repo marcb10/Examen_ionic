@@ -1,0 +1,26 @@
+<ion-view view-title="Subject">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <table class="table">
+            <tr class="">
+                <td><h3>Subject</h3></td>
+                <td><h3>Estudiante</h3></td>
+                <td><h3>Info student</h3></td>
+            </tr>
+            <tr ng-repeat="inf in subject.students">
+                <td>{{ subject.name }}</td>
+                <td>{{ inf.name }}</td>
+                <td><button ng-click="tlf(inf)">+ info</button> </td>
+            </tr>
+        </table>
+        <table class="table" ng-if="tele">
+            <tr class="">
+                <td><h3>Phone </h3></td>
+                <td><h3> name</h3></td>
+            </tr>
+            <tr ng-repeat="ins in tele">
+                <td>{{ ins.tlf }}</td>
+                <td>{{ ins.name }}</td>
+            </tr>
+        </table>
+    </ion-content>
+</ion-view>
